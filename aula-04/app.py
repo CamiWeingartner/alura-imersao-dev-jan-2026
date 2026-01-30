@@ -42,6 +42,9 @@ config_pt_br = {
 # --- Carregamento dos dados ---
 #df = pd.read_csv("https://raw.githubusercontent.com/vqrca/dashboard_salarios_dados/refs/heads/main/dados-imersao-final.csv")
 file_path = os.path.join("sample_data", "dados-imersao.csv")
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(BASE_DIR, "sample_data", "dados-imersao.csv")
 df = pd.read_csv(file_path)
 
 # --- Barra Lateral (Filtros) ---
