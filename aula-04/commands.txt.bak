@@ -1,7 +1,0 @@
-python3 -m venv .venv # cria .venv
-
-.venv\Scripts\Activate # ativa o venv
-
-pip install -r requirements.txt # instala as bibliotecas que estão no requiremements.txt (-r itera todas as linhas do arquivo)
-
-streamlit run app.py # executa a página
