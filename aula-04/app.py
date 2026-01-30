@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -40,7 +41,8 @@ config_pt_br = {
 
 # --- Carregamento dos dados ---
 #df = pd.read_csv("https://raw.githubusercontent.com/vqrca/dashboard_salarios_dados/refs/heads/main/dados-imersao-final.csv")
-df = pd.read_csv("sample_data\dados-imersao.csv")
+file_path = os.path.join("sample_data", "dados-imersao.csv")
+df = pd.read_csv(file_path)
 
 # --- Barra Lateral (Filtros) ---
 st.sidebar.header("🔍 Filtros")
